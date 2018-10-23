@@ -262,7 +262,7 @@ selected_chroms = np.take(population, selected_idx, axis=0)
 ### **Step5: 다음 세대 염색체 생성 (Crossover & Mutation)**
 Step5는 기존 local search의 단점을 보완하기 위한 단계로 다음 세대 염색체를 생성하는 과정을 통해 search space를 넓힙니다. 해당 과정은 crossover와 mutation 두 단계에 걸쳐 진행됩니다. 먼저 crossover는 population에서 샘플링한 두 염색체의 일부를 섞어 새로운 다음 세대 염색체를 생성하는 과정입니다. 이 때, 두 부모 염색체는 fitness에 대한 확률 값을 기반으로 population에서 샘플링되며, 두 염색체의 일부를 섞는 과정은 두 부모 염색체를 crosspoint를 기준으로 자른 후 해당 부분을 무작위로 맞교환하는 방식으로 진행됩니다. Crossover의 도식과 구현 코드는 아래와 같습니다.
 
-![Crossover](http://h-doong.github.io/assets/img/blog/crossover.jpg){:data-width="1920" data-height="1500"}
+![Crossover](/assets/img/blog/crossover.jpg){:data-width="1920" data-height="1500"}
 Crossover
 {:.figure}
 ~~~python
@@ -289,7 +289,7 @@ for i in range(len(cross_tf)):
 
 다음으로 mutation은 이름대로 돌연변이를 생성함으로써 search space를 넓히고 국소 최적해를 피할 가능성을 높이는 방법입니다. mutation은 crossover를 통해 생성된 자식 염색체들의 집합을 대상으로 진행됩니다. 각각의 자식 염색체에 대해 해당 염색체에 존재하는 유전자를 mutation 비율만큼 무작위로 반대 값으로 변형하는 방법입니다. 즉, mutation된 유전자는 원래 값이 1이었으면 0으로, 0이었으면 1로 대체됩니다. 해당 코드는 아래와 같습니다.
 
-![Mutation](http://h-doong.github.io/assets/img/blog/mutation.jpg){:data-width="1920" data-height="1500"}
+![Mutation](/assets/img/blog/mutation.jpg){:data-width="1920" data-height="1500"}
 Mutation
 {:.figure}
 ~~~python
