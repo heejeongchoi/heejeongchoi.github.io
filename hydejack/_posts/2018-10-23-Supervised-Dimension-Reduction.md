@@ -74,7 +74,7 @@ adj_R_sq = 1 - (self.n - 1) / (self.n - len(used_vars) - 1) * SSE / SST
 
 위에서 소개한 두 변수 선택 기준에 이어 회귀 모델에서 변수의 유의미성을 판단하는 기준이 되는 p-value에 대해 살펴보겠습니다. p-value란 가설 검정에서 귀무가설을 지지하는 확률을 나타내는 지표입니다. 따라서, p-value가 작을수록 귀무가설(변수의 계수=0)을 지지하는 확률이 낮으므로 변수가 유의미하다고 볼 수 있습니다. 아래 그림에서 p-value는 빨간색 부분에 해당하며, 이를 구현한 코드는 다음과 같습니다.
 
-![p-value](/assets/img/blog/p_value.jpg){:data-width="1920" data-height="1200"}
+![p-value](/assets/img/blog/p_value.JPG){:data-width="1920" data-height="1200"}
 p-value
 {:.figure}
 ~~~python
