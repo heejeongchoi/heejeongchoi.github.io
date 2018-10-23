@@ -1,12 +1,9 @@
 ---
 layout: list
-title: Hydejack
-slug: hydejack
+title: Business Analysis
+slug: Business_Analysis
 menu: true
 order: 1
 description: >
-  Hydejack is a pretentious two-column [Jekyll](http://jekyllrb.com/) theme, stolen by
-  [@qwtel](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com).
-  You could say it was.. [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).
-  Open `_featured_tags/hydejack.md` to edit this text.
+  고려대학교 산업경영공학과 대학원 강필성 교수님의 Business Analysis 강의 관련 포스팅입니다. 
 ---
